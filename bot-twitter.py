@@ -1,8 +1,9 @@
+import datetime
+import time
 import tweepy
 import requests
 from bs4 import BeautifulSoup
-import time
-import datetime
+from datetime import datetime
 
 #Autenticação das chaves do Twitter
 auth = tweepy.OAuthHandler('L1W4qofW067CnFs2fp4BCBbfB', 'BYyatvVoIPLtVvoPAQQQSmNiVDXUrlMy67wGvOsLnxFR613dqS')
@@ -41,7 +42,7 @@ if res:
     try:
         api.update_status(status = sp)
         print("Enviado")
-        time.sleep(700)
+        time.sleep(30)
         print("Dormindo") 
     except tweepy.TweepError as e:
       print(e.reason)
