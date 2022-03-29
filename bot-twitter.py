@@ -6,8 +6,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 #Autenticação das chaves do Twitter
-auth = tweepy.OAuthHandler('L1W4qofW067CnFs2fp4BCBbfB', 'BYyatvVoIPLtVvoPAQQQSmNiVDXUrlMy67wGvOsLnxFR613dqS')
-auth.set_access_token('1391083748679200770-qDeQdjDcWcIDANPoBsJ3j7SIHYDH3N', 'iTMJZFy51jstHMV6zLXIa8EW46upIMJo5EzrLDUHhWeFv')
+auth = tweepy.OAuthHandler('xxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxx')
+auth.set_access_token('xxxxxxxxxxxxxxxxxxxxxx', 'xxxxxxxxxxxxxxxxxxxxxxx')
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 user = api.me()
